@@ -5,11 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles/custom.css">
 </head>
     <body>
+
+        <!-- Services section -->
+        <!-- container contains all cards and info -->
+        <div class="container-fluid px-0 ">
+            <!-- col-sm-9  not really useful -->
+            <h2 class="m-3 p-3 col-md-3 col-6 mx-auto text-center border-5 border-bottom border-info">Our services</h2>
+            <!-- <hr class="bg-danger border-2 border-top border-danger" /> -->
+            
+            <!-- first row -->
+            <div class="d-flex flex-row bg-primary-subtle p-3 gap-4 flex-wrap justify-content-center">
+                <div class="text-center">
+                    <!-- this is each individual card -->
+                    <div class="card border-3 border-dark" style="width: 300px;">
+                        <img class="card-img-top" src="./styles/images/short.png" alt="Short Hair cut">
+                        <div class="card-body">
+                            <h4 style="margin-top: 10px;" class="card-title">Short Hair Cut</h4>
+                            <p style="margin-top: 20px;" class="card-text">Clipper cut or scissors-over-comb for people who want short and simple. </p>
+                            <a style="margin-bottom: 5px;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="card border-4 border-dark" style="width: 300px;">
+                        <img class="card-img-top" src="./styles/images/medium.png" alt="Medium Hair cut">
+                        <div class="card-body">
+                            <h4 style="margin-top: 10px;" class="card-title">Medium Hair Cut</h4>
+                            <p style="margin-top: 20px;" class="card-text">Bobs, layers, for straight to wavy hair,
+                                perfect for professional looking.</p>
+                            <a style="margin-bottom: 5px;" data-bs-toggle="modal" data-bs-target="#modal2" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="card border-4 border-dark" style="width: 300px;">
+                        <img class="card-img-top" src="./styles/images/long.jpeg" alt="Long Hair cut">
+                        <div class="card-body">
+                            <h4 style="margin-top: 10px;" class="card-title">Long Hair Cut</h4>
+                            <p style="margin-top: 20px;" class="card-text">Same as medium, with a longer height and more effort for thick hair.</p>
+                            <a style="margin-bottom: 5px;" data-bs-toggle="modal" data-bs-target="#modal3" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="card border-4 border-dark" style="width: 300px;">
+                        <img class="card-img-top" src="./styles/images/colorful.jpg" alt="Colorful hair">
+                        <div class="card-body">
+                            <h4 style="margin-top: 10px;" class="card-title">Hair Color Cut</h4>
+                            <p style="margin-top: 20px;" class="card-text ">Full bleach or a refresh for your colour, we are here for you!</p>
+                            <a style="margin-bottom: 5px;"  data-bs-toggle="modal" data-bs-target="#modal4" class="btn btn-primary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal short hair -->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Short Hair Cut</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-justify">
+                            <p>Operations can be done by our staff: <b>junior (1-5 years of experience)</b>, <b>senior (5-10 years of experience)</b> or <b>expert (10+ years of experience)</b>. The prices depend on the degree of experience you want.</p>
+                            <ul>
+                                <li>Junior: from 40$</li>
+                                <li>Senior: from 60$</li>
+                                <li>Expert: from 100$</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
+                        <button type="button" class="btn btn-primary">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Medium Hair -->
+
+            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Medium Hair Cut</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-justify">
+                            <p>Operations can be done by our staff: <b>junior (1-5 years of experience)</b>, <b>senior (5-10 years of experience)</b> or <b>expert (10+ years of experience)</b>. The prices depend on the degree of experience you want.</p>
+                            <ul>
+                                <li>Junior: from 60$</li>
+                                <li>Senior: from 80$</li>
+                                <li>Expert: from 120$</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
+                        <button type="button" class="btn btn-primary">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Long Hair Cut</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-justify">
+                            <p>Operations can be done by our staff: <b>junior (1-5 years of experience)</b>, <b>senior (5-10 years of experience)</b> or <b>expert (10+ years of experience)</b>. The prices depend on the degree of experience you want.</p>
+                            <ul>
+                                <li>Junior: from 80$</li>
+                                <li>Senior: from 100$</li>
+                                <li>Expert: from 150$</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
+                        <button type="button" class="btn btn-primary">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Color Hair Cut</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-justify">
+                            <p>Operations can be done by our staff: <b>junior (1-5 years of experience)</b>, <b>senior (5-10 years of experience)</b> or <b>expert (10+ years of experience)</b>. The prices depend on the degree of experience you want.</p>
+                            <ul>
+                                <li>Junior: from 100$</li>
+                                <li>Senior: from 150$</li>
+                                <li>Expert: from 200$</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
+                        <button type="button" class="btn btn-primary">Book appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
     </body>
 </html>
