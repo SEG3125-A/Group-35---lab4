@@ -18,6 +18,22 @@
     object-fit: cover;
 }
 
+/* This is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+.col-12{
+    margin-bottom: 0.8vw;
+}
+
+
+.footer {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+
 $primary: #D1BE9C;
 $secondary: #F9EAE1;
 $info: #AA998F;
