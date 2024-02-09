@@ -1,58 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- own styles -->
-    <link rel="stylesheet" href="style/style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- own styles -->
+  <link rel="stylesheet" href="style/style.css">
+
 </head>
 
-    <!-- navbar header -->
-    <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<!-- navbar header -->
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Services.html">Services</a>
-      </li>   
-      <li class="nav-item">
-        <a class="nav-link" href="Team.html">Team</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="Gallery.html">Gallery</a>
-      </li> 
-      <li class="nav-item">
-        <a class="nav-link" href="Contact.html">Contact</a>
-      </li>     
-    </ul>
-  </div>  
-</nav>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Booking</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
- <!-- PART WHERE YOU ADD THE SERVICES-->
- 
-    
-<!-- footer notes and names -->
-	<div class="jumbotron text-right" 
-		 style="background-color: rgb(25, 25, 25);">
-		 <footer class="blockquote-footer"
-		 style="color:white; font-family:apple chancery">Made with &#x1F90D; by Lolita I., David M., Leon L, Amani L</footer>
-	</div>
-    
-    </body>
+  <!-- PART WHERE YOU ADD THE SERVICES-->
+  <div id="appointment">
+    <h1 class="display-3" style="color: crimson; text-align: center; margin: 20px;"> Book an appointment </h1>
+    <br>
+    <form class="row g-3 needs-validation" novalidate style="margin: 0% 25% 1% 25%;">
+      <div class="col-12">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" required>
+        <div class="invalid-feedback">
+          Please fill in this field!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="" required>
+        <div class="invalid-feedback">
+          Please fill in this field!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="validationCustom03" aria-describedby="emailHelp" required>
+        <div class="invalid-feedback">
+          Please provide a valid e-mail!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="validationCustom04" class="form-label">Service</label>
+        <select class="form-control" id="validationCustom04" required>
+          <option selected disabled value="">Choose a service</option>
+          <option value="Haircut">Haircut - 30$</option>
+          <option value="Beard Trim">Beard Trim - 15$</option>
+          <option value="Beard and outline">Beard & Outline - 25$</option>
+          <option value="Senior Haircut">Senior Haircut - 20$</option>
+          <option value="Kids Haircut">Kids Haircut - 20$</option>
+          <option value="Hair and Beard">Hair & Beard - 40$</option>
+          <option value="Face wax">Face Wax - 10$</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a service!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="validationCustom05" class="form-label">Date</label>
+        <input type="date" class="form-control" id="validationCustom05"  required>
+        <div class="invalid-feedback">
+          Please select a date!
+        </div>
+      </div>
+      <div class="col-12">
+        <label for="validationCustom06" class="form-label">Time</label>
+        <select class="form-control" id="validationCustom06" required>
+          <option selected disabled value="">Choose a time</option>
+          <option value="9:00 AM">9.00 AM</option>
+          <option value="10:00 AM">10.00 AM</option>
+          <option value="11:00 AM">11.00 AM</option>
+          <option value="12:00 PM">12.00 PM</option>
+          <option value="1:00 PM">1.00 PM</option>
+          <option value="2:00 PM">2.00 PM</option>
+          <option value="3:00 PM">3.00 PM</option>
+          <option value="4:00 PM">4.00 PM</option>
+          <option value="5:00 PM">5.00 PM</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a time!
+        </div>
+      </div>
+      <div class="col-12" style="margin-bottom: 0%;">
+        <button class="btn btn-danger" type="submit" style="margin:2% 40% 0% 40%;" onclick="myFunction()">Book
+          appointment</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!-- footer notes and names -->
+  <div class="jumbotron text-right" style="background-color: rgb(25, 25, 25);">
+    <footer class="blockquote-footer" style="color:white; font-family:apple chancery">Made with &#x1F90D; by Lolita I.,
+      David M., Leon L, Amani L</footer>
+  </div>
+
+
+  <script>
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+
+    // Fetch all the forms and checks if validated then sends a confirmation message
+    function myFunction() {
+      const forms = document.querySelectorAll('.needs-validation')
+      var error = false
+      for (let i = 0; i < forms.length; i++) {
+        if (forms[i].classList.contains("was-validated") == false) {
+          error = true;
+        }
+      }
+      if (error == false) {
+        alert("Your appointment is confirmed!");
+      }
+    }
+
+    var date = new Date();
+    date.setDate(date.getDate());
+
+    $('#date').datepicker({
+      startDate: date
+    });
+  </script>
+</body>
+
 </html>
