@@ -44,14 +44,18 @@
             </li> 
             <li class="nav-item">
                 <a class="nav-link active" href="booking.html">Booking</a>
-            </li>     
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactGen.html">Contact</a>
+          </li>       
         </ul>
     </div>  
 </nav>
 
   <!-- PART WHERE YOU ADD THE SERVICES-->
-  <div id="appointment">
-    <h1 class="display-3" style="color: crimson; text-align: center; margin: 20px;"> Book an appointment </h1>
+  <div class="container-fuild location px-0 bg-primary-subtle"id="appointment">
+    <h2 class="m-3 p-3 col-md-3 col-6 mx-auto text-center border-5 border-bottom border-info"> Book an appointment</h2>
+    <!-- <h1 class="display-3" style="color: crimson; text-align: center; margin: 20px;"> </h1> -->
     <br>
     <form class="row g-3 needs-validation" novalidate style="margin: 0% 25% 1% 25%;">
       <div class="col-12">
@@ -117,7 +121,7 @@
         </div>
       </div>
       <div class="col-12" style="margin-bottom: 0%;">
-        <button class="btn btn-danger" type="submit" style="margin:2% 40% 0% 40%;" onclick="myFunction()">Book
+        <button class="btn btn-primary" type="submit" style="margin:2% 35% 0% 35%;color:white;" onclick="myFunction()">Book
           appointment</button>
       </div>
     </form>
@@ -164,13 +168,6 @@
         alert("Your appointment is confirmed!");
       }
     }
-
-    var date = new Date();
-    date.setDate(date.getDate());
-
-    $('#date').datepicker({
-      startDate: date
-    });
   </script>
 </body>
 
