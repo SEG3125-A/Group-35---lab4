@@ -20,7 +20,7 @@
     <body>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand ps-3" style="font-family:Brush Script MT; list-style: none;font-size:3rem;" href="index.html">LousyLooks</a>
+            <a class="navbar-brand ps-3" style="font-family:Brush Script MT; list-style: none;font-size:3rem; color:wheat" href="index.html">LousyLooks</a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -29,9 +29,6 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
@@ -53,13 +50,13 @@
 
  <!-- Services section -->
         <!-- container contains all cards and info -->
-        <div class="container-fluid px-0 ">
+        <div class="container-fluid px-0 " >
           <!-- col-sm-9  not really useful -->
           <h2 class="m-3 p-3 col-md-3 col-6 mx-auto text-center border-5 border-bottom border-info">Our services</h2>
           <!-- <hr class="bg-danger border-2 border-top border-danger" /> -->
           
           <!-- first row -->
-          <div class="d-flex flex-row bg-primary-subtle p-3 gap-4 flex-wrap justify-content-center">
+          <div class="d-flex flex-row bg-primary-subtle p-3 gap-4 flex-wrap justify-content-center" style="height: 69vh;">
               <div class="text-center">
                   <!-- this is each individual card -->
                   <div class="card border-3 border-dark" style="width: 300px;">
@@ -123,7 +120,7 @@
                       </div>
                       <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
-                      <button type="button" class="btn btn-primary">Book appointment</button>
+                      <button type="button" class="btn btn-primary" onclick="openService()">Book appointment</button>
                       </div>
                   </div>
               </div>
@@ -148,7 +145,7 @@
                       </div>
                       <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
-                      <button type="button" class="btn btn-primary">Book appointment</button>
+                      <button type="button" class="btn btn-primary" onclick="openService()">Book appointment</button>
                       </div>
                   </div>
               </div>
@@ -171,7 +168,7 @@
                       </div>
                       <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
-                      <button type="button" class="btn btn-primary">Book appointment</button>
+                      <button type="button" class="btn btn-primary" onclick="openService()">Book appointment</button>
                       </div>
                   </div>
               </div>
@@ -194,14 +191,13 @@
                       </div>
                       <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go back to site</button>
-                      <button type="button" class="btn btn-primary">Book appointment</button>
+                      <button type="button" class="btn btn-primary" onclick="openService()">Book appointment</button>
                       </div>
                   </div>
               </div>
           </div>
       </div>
 
- 
     
 <!-- footer notes and names -->
 	<div class="jumbotron text-right footer" style="background-color: rgb(25, 25, 25);">
@@ -210,7 +206,11 @@
 
 
     <script src="./scripts/main.js"></script>
-
+    <script>
+        function openService(){
+            window.location.href = "booking.html";
+        }
+    </script>
     
     </body>
 </html>
