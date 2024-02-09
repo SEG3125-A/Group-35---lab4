@@ -21,6 +21,10 @@ body {
   margin-bottom: 0.8vw;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 .footer {
   margin: 0 auto;
   text-align: center;
