@@ -55,12 +55,19 @@
     <!-- background image -->
 	<div class="container-fluid " 
 		 style="background-image: url('https://images.pond5.com/barbershop-salon-interior-black-silhouette-illustration-203820597_iconl_wide_nowm.jpeg');
-        height:80vh;object-fit: cover;">
+        height:80vh;object-fit: cover; background-color: #959191; background-blend-mode: multiply;">
     	<!-- title -->
     	<div class="container-xl text-center"
-    		 style="padding-top:15vh; height:48vh; color:crimson; font-family:Brush Script MT">
+    		 style="padding-top:15vh; height:48vh; color:wheat; font-family:Brush Script MT">
 			<h1 class="display-1">LOUSY LOOKS</h1>
-			<h1 class="display-4">Barber Shop / Hair Saloon</h1>
+			<h1 class="display-4">Hair Saloon</h1>
+            <p  style="color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: large; margin-top:5%; margin-bottom: 5%;">
+                Step into the world of LousyLooks Hair Salon, where we redefine beauty with unique flair. 
+                Our skilled stylists craft personalized masterpieces, transforming your hair into a work of art. 
+                From trendy cuts to vibrant colors, experience excellence at every visit. Embrace the extraordinary - because at LousyLooks, your hair deserves nothing less! 
+            </p>
+
+            <button type="button" class="btn btn-primary" onclick="openService()" style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: large;">Check out our services</button>
 		</div>
     </div>
 
@@ -70,7 +77,11 @@
 		 style="color:white; font-family:apple chancery">Made with &#x1F90D; by Lolita I., David M., Leon L, Amani L</footer>
 	</div>
 
-
+    <script>
+        function openService(){
+            window.location.href = "Services.html";
+        }
+    </script>
         
         
     </body>
