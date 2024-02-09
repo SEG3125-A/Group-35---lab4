@@ -1,10 +1,20 @@
 // Color palette
 // #CC8B86
-// #7D4F50
-// #F9EAE1
-// #D1BE9C
-// #AA998F
+// #7D4F50 .
+// #F9EAE1 .
+// #D1BE9C .
+// #AA998F .
 
+
+$primary: #D1BE9C;
+$secondary: #F9EAE1;
+$info: #AA998F;
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import '~bootstrap/scss/bootstrap';
 
 * {
     margin: 0;
@@ -23,14 +33,59 @@ body {
 }
 
 /* This is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
-.col-12{
+.col-12 {
     margin-bottom: 0.8vw;
 }
 
-.active{
-    text-decoration: underline;
+.active {
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: rgb(119, 125, 126);
 }
 
+// temp
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.location iframe {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+    width: 50%;
+}
+
+.wrapper{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.phone,.env {
+    font-size: 3rem;
+    color: #7D4F50;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    // margin: 5px;
+}
+
+.env {
+    color: #7D4F50;
+    background-color: #fff;
+}
+
+
+
+//   temp
 
 .footer {
     margin: 0 auto;
@@ -40,14 +95,3 @@ body {
     width: 100%;
     font-size: 1.5em;
 }
-
-
-$primary: #D1BE9C;
-$secondary: #F9EAE1;
-$info: #AA998F;
-
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/mixins";
-
-@import '~bootstrap/scss/bootstrap';
